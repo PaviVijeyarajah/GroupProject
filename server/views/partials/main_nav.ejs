@@ -1,59 +1,27 @@
-<div id="wrapper">
- <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">INFR3120</a>
+    <a class="navbar-brand" href="/">Campus Tournaments</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        
+
         <li class="nav-item">
-        <% if (title == "Home") { %>
-          <a class="nav-link active" href="/home">
-        <% } else {%> 
-          <a class="nav-link" href="/home">
-        <% } %> 
-          <i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-spa fa-beat-fade"></i> Home</a>
         </li>
 
         <li class="nav-item">
-        <% if (title == "About") { %>
-          <a class="nav-link active" href="/about">
-        <% } else {%> 
-          <a class="nav-link" href="/about">
-        <% } %> 
-          <i class="fa-solid fa-circle-info"></i> About</a>
+          <a class="nav-link active" aria-current="page" href="/itemlist"><i class="fa-solid fa-ranking-star fa-beat-fade"></i> Tournaments</a>
         </li>
 
         <li class="nav-item">
-        <% if (title == "Items") { %>
-          <a class="nav-link active" href="/itemlist">
-        <% } else {%> 
-          <a class="nav-link" href="/itemlist">
-        <% } %> 
-          <i class="fa-solid fa-cart-shopping"></i> Products</a>
+          <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-satellite-dish fa-beat-fade"></i> Contact Us</a>
         </li>
 
-        <li class="nav-item">
-        <% if (title == "Project") { %>
-          <a class="nav-link active" href="/projects">
-        <% } else {%> 
-          <a class="nav-link" href="/projects">
-        <% } %> 
-          <i class="fa-solid fa-folder-open"></i> Project</a>
-        </li>
-
-        <li class="nav-item">
-        <% if (title == "Contact") { %>
-          <a class="nav-link active" href="/contact">
-        <% } else {%> 
-          <a class="nav-link" href="/contact">
-        <% } %> 
-          <i class="fa-solid fa-phone"></i> Contact</a>
-        </li>
-        </ul>
+      </ul>
     </div>
   </div>
 </nav>
+
+<!-- NavBar End -->

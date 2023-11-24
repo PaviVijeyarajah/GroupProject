@@ -1,38 +1,36 @@
 <%- include partials/header.ejs%>
 <%- include partials/main_nav.ejs%>
-<!--Main Content-->
-<main>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  <main>
+  <br>
+  <div class = "jumbotron jumbotron-fluid text-center bg-dark text-white mb-0">
+    <div class = "container-fluid p-6">
+      <h1 class = "display-6 font-weight-bold"> <%= title %> </h1>
+      <p class = "lead font-weight-bold"> We'll Get Back To You As Soon As We Can! </p>
+      <br>
+    </div>
   </div>
-</div>
 
-<!--This is the contactpage of the website-->
-            <section id="contactpage">
-                <h2 id="pagetitle">Contact</h2>
-                <!--This is the form that is going to be filled out by users-->
-                <form action="mailto:pavishaan.vijeyarajah@ontariotechu.net" Form method="post" enctype="text/plain" name="form">
-                    <p>
-                        <p>Please fill the following form</p>
-                        <label for="names">Name : </label>
-                        <input type="text" name="names" size="30" placeholder="Enter your full name">  
-                    
-                    </p><br>
-                    <p>
-                        <label for="email">Email : </label>
-                        <input type="email" name="email" size="45" placeholder="Enter your email address">
-                    </p><br><br><br>
-                    <p>
-                        <label for="comments">Comments : </label> <br><br>
-                        <textarea id="comments" name="comments" cols="49" rows="8" placeholder="Feel free to leave a comment here"></textarea>
-                    </p>
-                    <p>
-                        <input id="submit" type="submit" value="Submit">
-                    </p>
-                </form>
-            </section> 
-    </main>
+
+  <!-- Contact Form -->
+  <div class="container contact-form">
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- Contact Form End -->
+
 <%- include partials/bottom_nav.ejs%>
 <%- include partials/footer.ejs%>
 

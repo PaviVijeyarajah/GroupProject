@@ -10,65 +10,56 @@
 
             <form class="form" method="POST"> <!--value is what section of database is being updated-->
                 <div class="form-group">
-                    <label for="itemTextField">Item Name</label>
+                    <label for="nameTextField">Name</label>
                     <input type="text" class="form-control"
-                    id="itemTextField"
-                    placeholder="Enter the Item name"
-                    name="item" 
-                    value="<%= Item.item %>" 
+                    id="nameTextField"
+                    placeholder="Enter the name"
+                    name="Name" 
+                    value="<%= Item.Name %>" 
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="stockTextField">Stock</label>
+                    <label for="sportTextField">Sport</label>
                     <input type="text" class="form-control"
-                    id="stockTextField"
-                    placeholder="Enter the stock number"
-                    name="stock" 
-                    value="<%= Item.stock %>"
+                    id="sportTextField"
+                    placeholder="Enter the sport name"
+                    name="Sport" 
+                    value="<%= Item.Sport %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="priceTextField">Price</label>
-                    <input type="number" class="form-control"
-                    id="priceTextField"
-                    placeholder="Enter the Price"
-                    name="price" 
-                    value="<%= Item.price %>"
+                    <label for="enddateTextField">End Date</label>
+                    <input type="text" class="form-control"
+                    id="enddateTextField"
+                    placeholder="Enter the end of event"
+                    name="EndDate" 
+                    value="<%= Item.EndDate %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="ModelTextField">Model</label>
+                    <label for="startdateTextField">Start Date</label>
                     <input type="text" class="form-control"
-                    id="ModelTextField"
-                    placeholder="Enter the Model number"
-                    name="model" 
-                    value="<%= Item.model %>"
+                    id="startdateTextField"
+                    placeholder="Enter the start of event"
+                    name="StartDate" 
+                    value="<%= Item.StartDate %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="conditionTextField">Condition</label>
+                    <label for="typeTextField">Type</label>
                     <input type="text" class="form-control"
-                    id="conditionTextField"
-                    placeholder="Enter the Item condition"
-                    name="condition" 
-                    value="<%= Item.condition %>"
+                    id="typeTextField"
+                    placeholder="Enter the type of tournament"
+                    name="Type" 
+                    value="<%= Item.Type %>"
                     required>
                 </div>
 
-                 <div class="form-group">
-                    <label for="descriptionTextArea">Description</label>
-                    <textarea type="text" class="form-control"
-                    id="descriptionTextArea"
-                    placeholder="Enter description"
-                    name="description" 
-                    required>
-                    <%= Item.description %>
-                    </textarea>
-                </div>
+                 
 
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>

@@ -1,0 +1,65 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+  padding-top: 56px; /* Adjusted for fixed navbar height */
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+}
+
+/* Adjust button color to your preference */
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* Style the button on hover */
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the description section */
+.container mt-4 {
+  padding: 40px 0; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+.display-4 {
+  color: #1c4672; /* Adjust the color to your preference */
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #6c757d; /* Adjust the color to your preference */
+}
+
+/* Style for the description box */
+.description-box {
+  background-color: #ffffff; /* Box background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}

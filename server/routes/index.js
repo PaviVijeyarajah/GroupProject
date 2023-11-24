@@ -1,19 +1,19 @@
 let express = require('express');
 let router = express.Router();
-let indexController = require('../controller/index');
 /* home page. */
-router.get('/', indexController.displayHomePage);
+router.get('/', (req, res, next)=> {
+    res.render('index', {  title: 'Home'   });
+});
 
 /* home page. */
-router.get('/home',  indexController.displayHomePage);
+router.get('/home',  (req, res, next)=> {
+    res.render('index', {  title: 'Home'   });
+});
  
-/* about page. */
-router.get('/about', indexController.displayAboutPage);
-
-/* projects page. */
-router.get('/projects', indexController.displayProjectPage);
 
 /* contact page. */
-router.get('/contact', indexController.displayContactPage );
+router.get('/contact', (req, res, next)=> {
+    res.render('contact', { title: 'Contact Us?'  });
+  });
 
 module.exports = router;
