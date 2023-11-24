@@ -8,7 +8,7 @@ router.get('/', async (req,res,next)=>{ //< Mark function as async
     try{
        const ItemList = await Item.find(); //< Use of await keyword
        res.render('items/list', {
-          title: 'Item List', 
+          title: 'Active Tournaments', 
           ItemList: ItemList
        });
     }catch(err){

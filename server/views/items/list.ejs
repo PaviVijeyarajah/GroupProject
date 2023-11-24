@@ -2,11 +2,20 @@
 <% include ../partials/main_nav.ejs %>
 <main class="container">
     <div class="row">
-        <div class="offset-md-1 col-md-9">
-            <h1><% title %> </h1>  
-            <a href="/itemlist/add" class="btn btn-primary" 
-            role="button"><i class="fa-solid fa-cart-plus"></i> Add an Item</a>      
-        <br>
+  <br>
+  <div class = "jumbotron jumbotron-fluid text-center bg-dark text-white mb-0">
+    <div class = "container-fluid p-6">
+      <h1 class = "display-6 font-weight-bold"> <%= title %> </h1>
+      <p class = "lead font-weight-bold"> View Or Update The Campus Tournaments! </p>
+      <br>
+      <a href="/itemlist/add" class="btn btn-primary" 
+            role="button"><i class="fa-solid fa-calendar-plus"></i> Add an Tournament   </a>
+    <br>
+    <br>
+    </div>
+  </div>
+  <br>
+        <div class="offset-md-1 col-md-9">    
         <br>
         <table class="table table-dark table-bordered table-striped table-hover">
             <tr class="d-flex">
